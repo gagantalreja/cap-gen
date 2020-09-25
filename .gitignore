@@ -1,0 +1,7 @@
+data/images
+data/captions/happy
+data/caption/sad
+model
+webapp/venv
+api-text/venv
+api-text/checkpoint

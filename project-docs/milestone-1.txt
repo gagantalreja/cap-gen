@@ -1,0 +1,115 @@
+hello
+Describe Your Project 
+
+Our project is to create and integrate a deep learning NLP model to generate captions for social media photos using sentiment analysis of the image coupled with face recognition. The model will take in the image that the user wants to upload to his/her feed and would suggest A.I. generated captions for it based on the mood of the photograph. We would be using web-scrapers to actually gather data for training our text generation model which would scrape various Instagram and twitter pages gathering various kinds of captions and one-liners. The data set will require heavy preprocessing so as to train the text generation model effectively. The dataset will go through a phase of sentiment analysis classifying the sentences and captions into 4-5 broad categories that usually are associated with an image on a social media platform.
+****************************************************************************************
+Why I have Chosen This Project
+
+Captions are a powerful asset that can be helpful in gathering likes, comments, and can even get an online viewer to connect with you emotionally. Moreover, if your post gets enough traction/engagement, it can land up on the Explore Page which helps gain a bigger social media following. Most importantly, captions create an enormous opportunity to establish a more grounded relationship with your audience. An extraordinary social media post caption will leave a viewer/surfer speechless and the more somebody spends reading your caption and connecting with your post, the better your post will rank in accordance to the Instagram algorithm. As part of a generation obsessed with posting on social media, we decided to create a software that can help people generate captions based on the mood displayed in their images. We likewise find automated caption generation intriguing on the grounds that it caters to the needs of a content creator or a consumer who likes posting on social media.
+****************************************************************************************
+What Problem(s) it solves
+
+Our automated caption generator saves the hassle of an avid social media user who has to go through a lot of quotes, articles, and other social media accounts searching for the perfect caption for his/her post. Even after selecting the caption, there may be typos and grammar mistakes in the caption which weakens the connection between the post and the viewer. It will also ensure that the caption always meets the standards making the whole "caption game" effective and consistent throughout with regards to "quality". The caption generator actually suggests captions based on an analysis of the image that means that your caption and your post are always co-related to each other and don't just exist as two separate bodies.
+****************************************************************************************
+List down the Ethics, Privacy, Moral and Legal issues related with the project
+
+The project can be tested on ethical grounds that we are performing analysis on someone's data online without their permission. To defend ourselves on ethical grounds we want to assure everyone that the data of any user is not being misused in any case and we are using it solely for academic purposes.
+
+The project can be tested on the grounds of privacy. As we mentioned in the previous point that we are not misusing any data neither selling it to any third party for our profit. The data will only be used for academic and research purposes and will not be stored or made public in any case. Moreover, the data has been obtained from the public accounts on social media and we are following all the terms and conditions put forward to us by all the social media platforms pertaining to the privacy and security of data.
+
+People may think that we can use this project to spread propaganda among people by exploiting the results we get which may not be acceptable on moral grounds. To defend ourselves on such moral grounds we want to say that this project is just an academic venture and is only being made to analyse the trends online and will not be used to spread hate or support to any kind of public or private organisation.
+
+Legally, we can be challenged for using any other project or part of some other project. In our defense, we want to say that if we use any part of some other project we provide due credit to that organisation or person and will follow all the terms of use laid down by that organisation or person. If we use any service that is priced, we want to assure that all the payments will be duly made and service will be used lawfully according to the terms and conditions.
+****************************************************************************************
+List Three Projects with their Brief that you have done in the First year, Second year and Third year of your B.Tech Degree. Also list your teammates in each Project.
+
+Tweet Inspector (Gagan Talreja, Aditya Bhardwaj)
+Online social networks are likewise generally utilized by abusers, for spreading hate or some propaganda about world events or local affairs, politics or religion, interests, affiliations, organizations, products, people. Numerous culprits 'take cover' behind the way that they will most likely be unable to be promptly distinguished, making statements that they wouldn't think about saying eye to eye, which could be viewed as fainthearted. Online maltreatment takes a few structures, and unfortunate casualties are not limited to open figures. They can carry out any responsibility, be of all ages, sex, sexual direction or social or ethnic foundation, and live anyplace. With the growth of social media platforms in the 21st century, it has become necessary for any individual or organization to maintain a good social reputation. Any kind of oppressive and abusive posts against someone can result in the decline of their social reputation. Such abusive posts, in the worst case, can also result in social riots and other events that can harm the peace of a region. This problem needs a good solution. Many social media platforms like Instagram have developed and deployed systems that can detect abusive and hate inducing posts and block the account that they have been posted. But we found that there are no systems or fewer systems that can detect abuses in Indian languages. Hindi being the most popular Indian language, we decided to create a system using machine learning algorithms that can classify tweets in Hindi as abusive and not abusive.
+
+SentiMix (Gagan Talreja, Arjun Mohnot, Mehul Goel)
+Person to person interaction, blogging and social media services has huge number of users and are increasing rapidly in India. Maximum users in India use a mix of Hindi and English words (Hinglish) as a mode of communication. Identification of user sentiments and possible hate-filled posts, messages and comments in Hinglish is still a challenge. Online social media networks are now more utilized by abusers, planned for disseminating certain disinformation. As the size of the hate content that is being generated is huge it emphasis the need for the automatic system to detect code-mixed sentiments. Although there are many such researches done in the sentiment analysis in English text but not much can be found in Hindi-English Code-Mix language. The project proposed a method to analyse Hinglish sentiments using long short-term memory (LSTM), which works on the embedding generated using trainable fastText word embedding model.
+
+Memotion Analysis(Souvik Mishra, Ambuje Gupta, Harsh Kataria)
+Memotion analysis is a very crucial and important subject in today’s world that is dominated by social media.  This project presents the results and analysis of the SemEval-2020 Task-8:  Memotion analysis by team Kraken that qualified as winners for the task.  This involved performing multi-modal sentiment analysis on memes commonly posted over social media. The task comprised of 3 sub-tasks,  Task A was to find the overall sentiment of a meme and classify it into positive, negative or neutral, Task B was to classify it into the different types which were namely humor,  sarcasm,  offensive or motivation where a meme could have more than one category,Task C was to further quantify the classifications achieved in task B. An imbalanced data of 6992 rows was utilized for this which contained images (memes), text (extracted OCR) and their annotations in 17 classes provided by the task organizers. In this project, we proposed a hybrid neural Naïve-Bayes Support Vector Machine and logistic regression to solve a multilevel 17 class classification problem. It achieved the best result in Task B i.e 0.70 F1 score.
+*************************************************************************************************************************************************************************************
+Give Names of Three Persons with emais ids whom you have discussed the details of the project and what was their reaction/suggestion
+
+Sanjana Talreja (sanjanatalreja28@gmail.com):
+In today's age of social media a lot of people, especially the younger generation is very much active on social platforms such as Instagram, Twitter, Reddit, etc. Captions are something that is common to all these platforms. Generation of good quality captions which goes well with the posts that I am choosing to upload is a real time saver and relieves me of double-checking for typos and grammatical errors in the caption. 
+Kudos to the team for coming up with such a useful idea, which not only keeps the need of the consumer at the forefront but also an excellent application of language processing and image analysis.
+
+Kishan Talreja (kktalr@gmail.com):
+Captions are something that is basic to a social media post. Good quality captions help form a deeper bond with the viewer. It can really impact the way a user interacts with the brand and the perception of that company as a whole. Having a reliable tool such as that subtitles which works out positively for the posts is a constant saver and saves me the trouble of making silly errors in the content.
+
+Tanvi Mishra (tanvi.mishra99@gmail.com)
+In today's time, social media has not only been a positive influence on the marketing industry but also has given way to a diversity of careers like social media influencers and brand endorsers. In my opinion, this project would prove fruitful for kickstarting marketing initiatives and influencing by using relevant language to communicate with the followers.
+*************************************************************************************************************************************************************************************
+Short and long term planning with detailed and logical steps and timelines
+
+15th August - 31st August - Documentation, Data Collection: In the first week of the project work, we will be creating a detailed documentation of the project where we will describe what we are doing and how will we approach it. Simultaneously, we will be going through some literature about similar projects to understand what methodologies can be used for the project. Further, we will create a program to get data from social media sites like instagram and twitter using scrapers. 
+
+1st september - 30th september - Data Pre-processing and creating models: After the data collection part has been completed during the first month, we will start working towards pre-processing of the data. Both text and image data will be cleaned so that best accuracy can be achieved from the models. Further, we will start working towards creting different models and analysing them simulatneously so that the best model can be used in the final version.
+
+1st october - 20th october - Creating api for models and deploying the api: After the models have been created and the best ones are chosen, we will create a flask api and deploy it on cloud, probably AWS. We will also start working towards creating the frontend of the project. 
+
+21st October - 3rd November - Creating and deploying frontend: We will work towards creating a frontend for the project. The frontend will be a webiste that will be created a using a web tech like flask, javascript and bootstrap. Further if time permits we will also try to create a mobile application for the same. The project will finally be deployed on cloud.
+*************************************************************************************************************************************************************************************
+Who will be the potential clients/customers/users/startups/beneficiaries of the project. Describe appropriately.
+
+Everyone ranging from a normal social media platform user to a professional firm doing digital marketing for products are our potential customers. If a person uses social media platforms in his/her day to day life he will benifit from our project. For an average user the time he/she saves by instantly getting an AI suggested caption in comparison to going online and searching through tonnes and tonnes of posts, quotes and articles just to settle for something that may or may not go with their actual post is just so convinient. And for professional firms who handle social media accounts for brands or individuals, our project would point the content writers of the firm in the right direction, rather than beating around the bush to actually find the emotion that the image is portraying our project would help them find the actual vibe of that post and the kind of content that would go along with it seamlessly saving them the cost of reiteration of the whole content generation process and making the whole start to finish much more efficient.
+****************************************************************************************
+What will be the innovation in this project?
+
+The integration of Machine Learning with social media is something that is often thought about and has been used to develop a lot of sentiment analysis models along with other text-based information gathering projects, but the idea of actually generating text using artificial intelligence in accordance with features extracted from an image is something that hasn't been worked on as per our present knowledge. The innovation in this project is our idea itself, the thought that machine learning and its techniques can be used to generate text which originates from a context derived from an image is one of its kind.
+****************************************************************************************
+How it will be different from similar existing solutions
+
+As per our knowledge and research that we have done to actually finalise this topic for our capstone we have realised that there exists no solution that actually takes context cues from an image to generate text based on that context. Normal text generation models are trained on huge corpuses of data which is usually of a single author or entity to mimic his/her style of writing. A lot of caption generators have a present corpus of already existing captions which are classified into different emotions. Our project will actually "generate" a caption based on the image and not just copy paste a previously existing caption.  
+****************************************************************************************
+What makes it challenging enough to be chosen to be done in four months (Aug-Nov)
+
+The fundamental test that we are going to confront while doing this venture is the information gathering and pre-processing. As the task is on a specific issue there is no named informational index accessible for the equivalent. The lack of research-papers makes the context transfer form an image processing model to a text generation model a challenging task to achieve. This being a completely new domain of applications of machine-learning comes with its own challenges. The biggest challenge would be to get an accurate representation of the image which in turn helps the text generator model to generate text based content which is correct contextually, semantically and grammatically.
+****************************************************************************************
+How it reflects and uses the knowledge gained as part of your UG curriculum covered in the last three years
+
+The project deals with generating text based on emotions detected in an image. The project requires deep knowledge about machine learning and AI. We have been motivated to study about artificial intelligence since the first semester of our college. We have studied subjects like Machine Learning and AI, Deep Learning and NLP in our course curriculum. The project uses knowledge of NLP for caption generation and knowledge of Deep Learning techniques to create model for emotion detection from image. Also, we learned ways to deploy models and projects while doing projects during our semester. Using that knowledge, we will deploy our project as API and web/mobile application on AWS cloud.
+****************************************************************************************
+How you will measure the success/outcome/quality of your project
+
+Our task will be measured for success on the basis of grammatical, contextual and syntactical correctness of the generated captions. Also, the captions generated should also be in accordance with the emotion that will be generated from the image. Our project will said successful if the emotion detected from the image is correct (upto an accuracy of 70%-85%) and henceforth the captions generated are also fairly good. Our task will be esteemed effective if and only if all the above mentioned sub-tasks are passed successfully.
+****************************************************************************************
+Resources required for the project and the feasibility of their availability as per the plans
+
+We will require frameworks with python and JavaScript condition to make AI model, front-end/REST-API. We have chosen to use (or create) scrapers for getting data from social media platforms like twitter and instagram. The scrapers will be used to get both captions and images from public social media accounts which will be further cleaned in order to achieve the best possible accuracy from the model. We don't require any equipment aside from workstations with a base setup of 8 GB RAM, 1 TB of disk space and an Intel Core i5 processor.
+****************************************************************************************
+If you are a team of 2 or more then clearly define responsibilities with name and how each member should be assessed differently
+
+Souvik Mishra - Responsible for creating the text generation model for generating captions. Also responsible for collecting text data from different social media websites, curating and cleaning them and then cretaing training and test sets for the same. Souvik will also be involved in creating of the ui/ux of the web/mobile application.
+
+Gagan Talreja - Responsible for collecting image data for different emotions, curating, annotating and cleaning the data and further splitting it into training and test sets. Also responsible for creating model to detect emotion from the image. Gagan will also create the API for the models and create backend for the web/mobile application.
+****************************************************************************************
+Evidence/literature/research/survey etc. in support of the hypothesis or idea to be successful. (Local/National/International Context)
+
+1. Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
+Kelvin Xu, Jimmy Lei Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard S. Zemel, Yoshua Bengio
+
+In this paper, the authors have suggested a method to generate captions for images using neural attention. Following is a passage from the research paper - 
+
+"Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of the art performance on three benchmark datasets: Flickr9k, Flickr30k and MS COCO."
+
+2. Guiding the Long-Short Term Memory Model for Image Caption Generation
+Xu Jia, Efstratios Gavves, Basura Fernando, Tinne Tuytelaars; Proceedings of the IEEE International Conference on Computer Vision (ICCV), 2015, pp. 2407-2415
+
+In this paper, the authors propose a nove method of generating captions for images using LSTM. A passage from the paper says - 
+"In this work we focus on the problem of image caption generation. We propose an extension of the long short term memory (LSTM) model, which we coin gLSTM for short. In particular, we add semantic information extracted from the image as extra input to each unit of the LSTM block, with the aim of guiding the model towards solutions that are more tightly coupled to the image content. Additionally, we explore different length normalization strategies for beam search to avoid bias towards short sentences. On various benchmark datasets such as Flickr8K, Flickr30K and MS COCO, we obtain results that are on par with or better than the current state-of-the-art."
+****************************************************************************************
+Risk Analysis (What are the factors which pose risk of failure of your project and risk of not completing your project by deadline)
+
+The consequences of this task can be undermined if the data is not annotated effectively and pre-prepared precisely. We should be sure while annotating captions and take help from different resources while annotating the dataset. Also, the data collection process can fail or get delayed if the social media websites block our scrapers or even change the structure of their service. In that case, we will either have to find other sources of data or modify the scrapers accordingly. The models to be trained should be assigned weights properly in order to get the expected results. If the models are not trained properly, the results won't be good and the project might not as effective.
+****************************************************************************************
+
+
+
+
+
+
