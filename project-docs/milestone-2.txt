@@ -1,0 +1,207 @@
+The web app and mobile app part of our project are still in their initial stages of development. The application interface is quite simple in nature. Our application has straight forward U.I. implementations and concepts. All the user needs to do is upload the photo of his/her choice that is intended to be posted on the social media platform using the upload button. After that, the photo will be analyzed by our ML models and an AI-generated caption will be displayed which can be copied by clicking a button. Further, we would be adding in certain features that let you see the word count and some other insights regarding the caption and other related things.
+
+
+
+
+
+
+
+Potential User 1 Feedback:
+CapGen has a very friendly user interface, both for its mobile and web application prototype. Apart from an interactive and performance-driven design that enables seamless user experiences, the application fetches quite accurate results for the purpose that it serves, that is, generating creative captions for an uploaded image according to the emotions detected.  To sum up, CapGen is quite good owing to a simple yet responsive design and efficient functionality.
+Potential User 2 Feedback:
+CapGen has an amicable UI. Aside from an intelligent and execution driven plan that empowers consistent client encounters, the application brings very precise outcomes for the reason that it serves, that is, producing innovative inscriptions for a transferred picture as indicated by the feelings recognized. To summarize, CapGen is very acceptable to a straightforward yet responsive plan and effective usefulness.
+Potential User 3 Feedback:
+In today's time, social media marketing is a quintessential need to improve the audience of your product. CapGen , along with its easy-to-use design and its efficient capabilities to generate captions using emotion detection, will allow businesses to initiate influencing marketing initiatives that would not only help them in increasing their outreach but also would encourage healthy user relations. I am all for the idea behind the project and the final outcome.
+Potential User 4 Feedback:
+The idea of the product caters to my needs a lot. As an avid social media user, the importance of having a good caption that matches the context of your photos cannot be matched. I post a lot of photos on the go, and having to search for inspiration for captions is a big hassle for me. I like to live in the moment and CapGen will allow me to focus more on the photo itself, plus the intuitive UI makes it look super easy to use  
+Potential User 5 Feedback:
+The app is fun and easy to use. The user interface is quite responsive and well designed. Apart from this, the high accuracy in the results along with a good performance in terms of speed and other functionalities is quite appreciative. I wish the team all the very best with their endeavors.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Our project aims on extracting the emotion and sentiment of an image by taking the subject's facial expressions and the tone of the image into account. Based on the emotions extracted it then passes that emotion to the text-generation model in which a suitable caption is generated based on the emotion that was passed to it. For each emotion, we have to train different models so as to generate syntactically correct and semantically appropriate text which goes well with the image and meets the unsaid norms of a social media caption. The caption selected is then worked upon another model to suggest hashtags and emojis that will go well with the given text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The undertaking can be tried on moral grounds that we are performing an investigation on somebody's information online without their consent. To protect ourselves on moral grounds we need to guarantee everybody that the information of any client isn't being abused regardless and we are utilizing it exclusively for scholastic purposes.
+By getting to or utilizing the Service you consent to be limited by these Terms. In the event that you can't help contradicting any aspect of the terms, at that point you may not get to the Service.
+The undertaking can be tried on the grounds of protection. As we referenced in the past point that we are not abusing any information nor offering it to any outsider for our benefit. The information might be utilized for scholastic and exploration purposes and won't be put away or disclosed regardless. Additionally, the information has been acquired from the public records via online media and we are following all the terms and conditions set forward to us by all the web-based media stages relating to the protection and security of information.
+Individuals may feel that we can utilize this undertaking to spread purposeful publicity among individuals by abusing the outcomes we get which may not be satisfactory on moral grounds. To shield ourselves on such good grounds we need to state that this undertaking is only a scholarly endeavor and is just being made to break down the patterns on the web and won't be utilized to spread disdain or backing to any sort of open or private association.
+Legitimately, we can be tested for utilizing some other venture or part of some other task. With all due respect, we need to state that in the event that we utilize any aspect of some other venture we give due credit to that association or individual and will follow all the terms of utilization set somewhere around that association or individual. On the off chance that we utilize any help that is evaluated, we need to guarantee that all the installments will be appropriately made and administration will be utilized legally as indicated by the terms and conditions.
+
+
+
+
+
+
+
+
+
+The project does not require any high specification equipment for its deployment. It is just a simple software that can be deployed on the cloud in the form of REST-API or can be provided as a chrome plugin or can be converted into website service using different frameworks. The accuracy of the model is dependent upon the training data set. The accuracy of the data can be improved by providing more data to the model for training. The project can be monetized by providing it as a web-service or an application programming interface(API) and pricing the service based on the number of requests per month or per annum.  For instance, the project can be provided to users as SaaS. Software-as-a-Service (SaaS) has become a common approach to selling software online to consumers and businesses. Oftentimes an API will complement the core software and its offering, providing value to SaaS users. API access is often included as part of a core SaaS platform, but also can be delivered as an option for premium SaaS users. The project can also be introduced as an open-source project where anyone can contribute to the project which might help in the improvement of the model. In this way, the project can also be freely used by researchers and students to label data for similar kinds of projects. The project can also be launched as a mobile application on the play store.
+
+
+
+
+
+
+
+https://github.com/gagantalreja/cap-gen
+
+
+
+
+
+
+
+
+
+
+
+Week 1
+As opposed to mainstream thinking that the initial stretch of the project is troublesome in light of deciding a project and different things, the first week was genuinely simple as a result of a Eureka moment that we had at the point when the thought flew into our head. For the remainder of the week went into exploring the plausibility of the thought. The initial week was around the first week of August and the whole week was devoted to discovering ways that the thought could be actualized. We went through different blogs and research papers to see if anyone has worked on something similar before and find out different methods and ways to do the project.
+Week 2
+We found several research papers and blogs that were related to our project. We tried to understand the methodologies used in them and further, tried to implement them on our own to get a better understanding of what we were going to do. We also started working towards the data collection part simultaneously. Not only we started looking for data sources on the web but also decided to get data from social media sites by creating scrapers to scrape the public data available on such social platforms.
+Week 3
+This week we completed building our scraper and started collecting data from the online resources. We built an Instagram scraper to collect images through hashtags. The scraper takes any hashtag as input and returns all the images that have used that hashtag. We also created a twitter scraper to collect quotes for particular emotions through various twitter accounts that we know post particular kinds of stuff. We collected around 3000 tweets that were further cleaned to be used as input for the model. We also used the facial emotion recognition dataset present on Kaggle for training our model for emotion detection from the image.
+Week 4
+We started working towards building a model for emotion recognition from images. We tried some pre-trained models available on GitHub to see what kinds of results they give and also studied them further to understand what algorithms have been used to create those models. We started working towards creating a CNN model which we thought will be best suited for a task like ours. We created the model and tried refining the model by tweaking some parameters and adding/reducing layers until we got the best results.
+Week 5
+This week, we proceeded towards creating a next-generation model. We started by creating some basic RNN and LSTM models. But these models were not accurate enough as we were looking for results that were both grammatically and contextually correct. We needed to build a more complex model for getting such a result. For some days, we looked on the internet and found out a solution to our problem. We found a python library that was an implementation of the gpt-2 model by Open-AI. That library could be used to train the gpt-2 model on our own text and get results. After testing for a few days, we finally got what we wanted.
+Week 6
+The main functionalities of our project, that is, the models were ready. Now it was time to integrate both the models in a single project in order to achieve the desired outcome. We decided to create a REST API for the models. Initially, we were of the opinion that we should create a single API endpoint for both functionalities and started working towards it but eventually, we realized that it would be better to create two separate endpoints for both the models as it would be beneficial for us while creating the app.
+Week 7
+While we were still working on the API, we started designing the front end simultaneously. We created a minimal frontend for the website just for the sake of testing while we were still working on the main design. The API creation was completed. We tested the APIs using cURL and Postman and they were working fine. We also started documenting the progress of our project.
+Week 8
+We started working towards the design of the mobile application. We were trying to create such a design that could be easy to use and provided the user with a seamless experience of our app. We also started working towards integrating a new feature in our application which included suggesting hashtags and emojis based on the generated captions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Week 9
+During this week we will be working towards the development of web and mobile applications. While it will be easier for us to create a web application since we have prior experience of working with web-based frameworks, creating the mobile application will take some time. It is our first time that we will be creating a mobile application so we will be learning about the development and implementing it side by side.
+Week 10
+During this week we plan to complete the web development part by this week and a major chunk of the mobile application. We will then begin with the testing of our application. After the alpha testing has been done, we will go into the beta testing phase where we are thinking of giving some of our friends to use the app and take their feedback and incorporate the improvements they suggest.
+Week 11 and 12
+During these two weeks, we will be completely focusing on the deployment of the project on the cloud. As soon as the applications will be deployed, we will again get back to the drawing board to do testing in order to ensure that everything is working fine. We will then sit down to write the final documentation of the project and start preparing for the submission.
+
+
+
+
+
+
+
+
+
+https://www.linkedin.com/posts/gagantalreja_socialmedia-machinelearning-ai-activity-6716779339511406592-vLYu
+
+
+
+
+
+
+
+
+
+
+No, we don’t think that our idea can be submitted for a patent. This is because while researching ideas for this project we came across various implementations of facial recognition and text generation which were not exactly the same as ours but utilized somewhat the same essence as we did. Taking into consideration the fact that a lot of those implementations had already been published/launched we don’t think that we should submit this for a patent.
+
+
+
+
+
+
+
+
+
+
+
+
+1. Name: Anindya Vedant
+    Roll No: E16CSE085
+    Email: anindya.vedant@bennett.edu.in
+    Mobile No: 9773912858
+    Rating: 8/10
+    Feedback: Social media has become an integral part of our lives
+The outreach of a social media post highly depends upon the captions and hashtags that are associated with it as these have become seemingly more important than the post itself.
+Having automated the entire taxing process of finding the right captions, tags, emojis for it surely has a lot of commercial usages. And in addition to this sentiment analysis is also an added bonus. Could this project get any better for the millennials?
+
+2. Name: Nandana Varshney
+    Roll No: E16CSE164
+    Email: nandana.varshney@bennett.edu.in
+    Mobile No: 9910712612
+    Rating: 7/10
+    Feedback: The idea is a refreshing one indeed. I would like to know about how you plan on increasing the scope of the project. There are many emotions that exist, so do you plan on addressing the main 4 emotions first and then go further to classify and quantify other emotions, or do you plan on addressing all the emotions at once. There are also mixed emotions i.e I might be feeling sad but don't show it on my face so how will you tackle that. Plus how do you plan on taking the dataset, do you plan to generate your own dataset or are you planning to take some existing dataset. I see the scope of this project in a commercial space and with that being said accuracy of the model will matter a lot so focus more on increasing the accuracy
+3. Name: Harry Karwasra
+    Roll No: E16CSE174
+    Email: harry.karwasra@bennett.edu.in
+    Mobile No: 7837028080
+    Rating: 7.5/10
+    Feedback: I discover the application to be exceptionally valuable. The possibility of the application makes it so the setting of the content is in a state of harmony with the genuine post/picture that is being transferred. Individuals of our age experience loads of web journals and sites just to locate that ideal inscription for their web-based media posts. I figure this application will make the process of finding a good caption very easy and thus saving a lot of time which could have been utilized in some other productive way
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: Tanvi Mishra
+Account Coordinator at 6 Degrees - BCW
+Contact: +91-8953536323
+Rating: 8/10
+
+The app is highly useful as it caters to the need of a rapid functioning PR and social media marketing agencies. There are a lot of social media posts that need to be approved, each having its own set of rules and guidelines that are to be kept in mind while framing the content. The idea of the app makes it so that the context of the text i.e caption is in sync with the actual post/image that is being uploaded. Even if the captions aren’t used directly they provide powerful insight and a solid reference to build upon.
+
+Name: Vasundhara Shukla
+B.Tech final year, LNMIIT, Jaipur
+Contact: +91-6394375123
+Rating: 8/10
+
+I find the application to be very useful. People of our generation go through lots of blogs and websites just to find that perfect caption for their social media posts. I think this application will reduce the hassle of looking around the web for a caption. This project will cater to millennials.
+
