@@ -1,0 +1,22 @@
+logo {
+}
+
+plus-symbol {
+  z-index: 2;
+}
+
+.nav-item {
+}
+
+@media (min-width: 300px) {
+  p {
+    font-size: 13px;
+    max-width: 291px;
+  }
+}
+
+p {
+  font-size: 16px;
+  max-width: 474px;
+}
+
