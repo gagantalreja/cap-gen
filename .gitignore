@@ -5,3 +5,7 @@ model
 webapp/venv
 api-text/venv
 api-text/checkpoint
+web/venv
+web/key1.json
+new-api/venv
+*/__pycache__

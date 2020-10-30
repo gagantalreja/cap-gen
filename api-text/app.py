@@ -1,14 +1,14 @@
 from flask import Flask, jsonify
 import gpt_2_simple as gpt2
-print(1)
 app = Flask(__name__)
 
 def call_model():
     #from model import run_model
     sess = gpt2.start_tf_sess()
     gpt2.load_gpt2(sess, run_name='run1')
-    return gpt2.generate(sess, run_name='run1', return_as_list=True, length=100, temperature=0.7)[0]
-    
+    return gpt2.generate(sess, run_name='run1', return_as_list=True, temperature=0.7)[0]
+
+
 @app.route("/", methods=["GET"])
 def text_model():
 

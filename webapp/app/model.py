@@ -7,6 +7,7 @@ import cv2
 def main(image_path):
 
     face_image  = cv2.imread(image_path)
+    #face_image = cv2.cvtColor(face_image, cv2.COLOR_BGR2GRAY)
     #face_image = cv2.imdecode(image_path, cv2.IMREAD_UNCHANGED)
     face_locations = face_recognition.face_locations(face_image)
     top, right, bottom, left = face_locations[0]

@@ -1,0 +1,172 @@
+.hero-text {}
+
+.pic-sec {
+    background: url("../img/WinnieThePooh.png") bottom / contain no-repeat, #ffffff;
+}
+
+.head {
+    transition: 0.3s;
+}
+
+.rotate {
+    -webkit-animation: rotateY 1s infinite linear;
+    animation: rotateY 1s infinite linear;
+}
+
+@-webkit-keyframes rotateY {
+    to {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateY {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.cap-list {
+    list-style-type: none;
+    padding-left: 0;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.tag-list {
+    max-width: 500px;
+    overflow-x: scroll;
+}
+
+.cap-list div {
+    background: #f9f9f9;
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 4px 4px 3px -2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 14px;
+}
+
+.cap-list p {
+    padding-left: 11px;
+    width: 365px;
+    padding-top: 0px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 12px;
+}
+
+.style-4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.style-4::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.style-4::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #fff;
+}
+
+.style-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.style-body::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+}
+
+.style-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #fff;
+}
+
+
+.head:hover {
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.active {
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+@media (min-width: 769px) {
+    .hero-text {
+        padding-top: 174px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-col {
+        height: 94vh;
+    }
+}
+
+.text-col {
+    padding-top: 20px;
+    height: 200px;
+}
+
+.block-container {
+    height: 94vh;
+}
+
+@media (min-width: 576px) {
+    .block-container {
+        height: 94vh;
+    }
+}
+
+.col-md-6.text-center.d-flex.justify-content-center.align-items-center {}
+
+p {
+    max-width: 480px;
+}
+
+.text-col-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .text-col-1 {
+        justify-content: center;
+        align-items: start;
+    }
+}
+
+logo {}
+
+plus-symbol {
+    z-index: 2;
+}
+
+.nav-item {}
+
+@media (min-width: 300px) {
+    p {
+        font-size: 13px;
+        max-width: 291px;
+    }
+}
+
+p {
+    font-size: 16px;
+    max-width: 474px;
+}
