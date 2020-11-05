@@ -15,7 +15,7 @@ main_bp = Blueprint('main_bp', __name__)
 BASE = "https://cap-gen.herokuapp.com"
 creds = service_account.Credentials.from_service_account_file("./key1.json")
 client = vision.ImageAnnotatorClient(credentials=creds)
-s3_client = boto3.client('s3', aws_access_key_id="AKIAIDC7RTY65BXYCUAA",aws_secret_access_key="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",region_name='ap-south-1')
+s3_client = boto3.client('s3', aws_access_key_id="XXXXXXXXXXXXXXXXX",aws_secret_access_key="XXXXXXXXXXXXXXXXXXX",region_name='ap-south-1')
 
 config = TransferConfig(multipart_threshold=1024 * 25,
                         max_concurrency=10,
