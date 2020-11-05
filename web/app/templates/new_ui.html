@@ -8,7 +8,7 @@
     <title>CapGen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./static/fonts/material-icons.min.css">
     <link rel="stylesheet" href="./static/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="./static/css/Navigation-with-Button.css">
@@ -121,42 +121,21 @@
                         </div>
                         <div class="captions">
                             <ul class="cap-list px-3 py-3 style-4" id="">
-                                <span id="indicator"></span>
                             </ul>
+                            <div class="text-center">
+                                <button class="more_butt"><i class="fa fa-caret-down"></i></button>
+                            </div>
                         </div>
                         <div class="hashtags d-none">
                             <div class="tag-list style-4 px-3 pt-3 pb-2">
-                                <div class="d-flex justify-content-between pb-3 pt-3">
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);font-weight: normal; border: none;">#instagood</button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25); border: none;">#portraits</button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25); border: none;">#happy</button>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25); border: none;">#pooh</button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25); border: none;">#pooh</button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 122px;text-align: center;border-radius: 25px;height: 35px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25); border: none;">#pooh</button>
-                                </div>
+                
                             </div>
                             <div class="emojis px-3 mb-2">
                                 <div class="d-flex justify-content-between mt-4" style="font-family: Montserrat, sans-serif;">
-                                    <p style="font-size: 24px;font-family: Montserrat, sans-serif;font-weight: 500;">Emojis</p><i class="material-icons">arrow_forward</i>
+                                    <p style="font-size: 24px;font-family: Montserrat, sans-serif;font-weight: 500;">Emojis</p>
+                                    <i class="material-icons refresh-button">refresh</i>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 60px;text-align: center;border-radius: 117px;height: 60px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);border: none;">
-                                        <img src="static/img/Smiling%20face%20with%20open%20mouth%20and%20smiling%20eyes.svg">
-                                    </button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 60px;text-align: center;border-radius: 117px;height: 60px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);border: none;">
-                                        <img src="static/img/Squinting%20face%20with%20tongue.svg">
-                                    </button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 60px;text-align: center;border-radius: 117px;height: 60px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);border: none;">
-                                        <img src="static/img/Sun%20with%20face.svg">
-                                    </button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 60px;text-align: center;border-radius: 166px;height: 60px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);border: none;">
-                                        <img src="static/img/Vector.svg">
-                                    </button>
-                                    <button class="d-xl-flex justify-content-xl-center align-items-xl-center" style="background: #f9f9f9;width: 60px;text-align: center;border-radius: 69px;height: 60px;font-family: Montserrat, sans-serif;box-shadow: 4px 4px 3px -2px rgba(0,0,0,0.25);border: none;">
-                                        <img src="static/img/0%20-%20Default.svg" style="padding-left: 8px;">
-                                    </button>
+                                <div class="d-flex justify-content-between emo-list">
                                 </div>
                             </div>
 

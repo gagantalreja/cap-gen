@@ -1,7 +1,9 @@
-var addText = function (res) {
+var addText = function (res, k) {
     var html = '';
+    var c = "new"
     res.forEach(function (text) {
-        html += `<li>
+        if (k.indexOf(text) === -1) {
+            html += `<li class="${c}">
                     <div class="d-flex justify-content-around align-items-xl-center element" style="">
                         <p class="d-xl-flex align-items-xl-center" style="">${text}<br></p>
                         <button class="text-center copy" style="border: none; background: transparent;">
@@ -9,8 +11,40 @@ var addText = function (res) {
                         </button>
                     </div>
                 </li>`;
+            c = "";
+        }
     });
 
+    return html;
+}
+
+var addEmoji = function (res) {
+    var html = "";
+    res.forEach(function (emo) {
+        html += `<button class="emo-butt butt-copy d-xl-flex justify-content-xl-center align-items-xl-center">${emo["emoji"]}</button>`
+    });
+    return html;
+}
+
+var addTags = function (res) {
+    var html = `<div class="d-flex justify-content-between pb-3 pt-3">`;
+    var c = 0;
+    res.forEach(function (tag) {
+        if (c < 3) {
+            html += `<button class="tag-butt butt-copy d-xl-flex justify-content-xl-center align-items-xl-center">#${tag}</button>`;
+            c+=1;
+        }
+    });
+    html += "</div>";
+    html += `<div class="d-flex justify-content-between">`;
+    c = 0;
+    res.forEach(function (tag) {
+        if (c >= 3) {
+            html += `<button class="tag-butt butt-copy d-xl-flex justify-content-xl-center align-items-xl-center">#${tag}</button>`;
+        }
+        c+=1;
+    });
+    html += "</div>";
     return html;
 }
 
@@ -78,26 +112,40 @@ $(document).ready(function () {
                         'background': `url("${$('.uploaded').attr('src')}") bottom / contain no-repeat, #ffffff`
                     });
                     $('.uploaded').attr('src', 'static/img/fake_img.svg');
-                    $('.cap-list').append(addText(res["result"]["result"]));
+                    $('.cap-list').html("");
+                    $('.emo-list').html("");
+                    $('.tag-list').html("");
+                    console.log(res["emojis"])
+                    $('.cap-list').append(addText(res["result"]["result"], []));
+                    $('.emo-list').append(addEmoji(res["emojis"]));
+                    console.log(res)
+                    $('.tag-list').append(addTags(res["tags"]["result"]));
                 }
             });
         }
 
     });
 
-    $('.cap-list').on('scroll', function () {
-        if ($('#indicator').offset().top - $('.show-hashtag').offset().top <= 0) {
-            $.ajax({
-                type: 'GET',
-                url: '/text-api',
-                data: {
-                    'q': 'happy'
-                },
-                success: function (res) {
-                    $('.cap-list').append(addText(res["result"]));
-                }
-            });
-        }
+    $('.more_butt').on('click', function () {
+        $.ajax({
+            type: 'GET',
+            url: '/text-api',
+            data: {
+                'q': 'happy'
+            },
+            success: function (res) {
+                $('.new').removeClass('new');
+                var k = []
+                $('.cap-list li p').each(function (x) {
+                    k.push($(this).text())
+                });
+                $('.cap-list').append(addText(res["result"]["result"], k));
+                console.log($('.cap-list').scrollTop());
+                $('.cap-list').stop().animate({
+                    scrollTop: $('.new').position().top + $('.cap-list').scrollTop()
+                }, 1500, 'linear');
+            }
+        });
     });
 
     $('.cap-list').on('click', '.copy', function () {
@@ -113,5 +161,36 @@ $(document).ready(function () {
         } catch (err) {
             alert('Unsupported Browser!');
         }
+    });
+    
+    $('.hashtags').on('click', '.butt-copy', function () {
+        var text = $(this).text().trim();
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = text;
+        elem.select();
+        try {
+            var ok = document.execCommand('copy');
+            if (ok) alert('Copied!');
+            else alert('Unable to copy!');
+        } catch (err) {
+            alert('Unsupported Browser!');
+        }
+    });
+
+    $('.refresh-button').on('click', function () {
+        $('.emo-butt').addClass('pulse-button');
+        $.ajax({
+            type: 'GET',
+            url: '/emo-api',
+            data: {
+                q: 'happy',
+            },
+            success: function (res) {
+                console.log(res);
+                $('.emo-list').html(addEmoji(res["result"]));
+                $('.emo-butt').removeClass('pulse-button');
+            }
+        });
     });
 });

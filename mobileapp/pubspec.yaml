@@ -32,6 +32,7 @@ dependencies:
   mime_type: ^0.3.2
   http_parser: ^3.1.4
   infinite_scroll_pagination: ^2.2.0
+  http: ^0.12.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
