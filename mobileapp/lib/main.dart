@@ -284,7 +284,7 @@ class _UploadState extends State<Upload> {
                   ),
                 ),
                 Positioned(
-                  top: 390,
+                  top: MediaQuery.of(context).size.height - 400,
                   width: MediaQuery.of(context).size.width,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -351,10 +351,10 @@ class _UploadState extends State<Upload> {
                   ),
                 ),
                 Positioned(
-                  top: 595,
-                  left: 133,
+                  top: MediaQuery.of(context).size.height - 135,
+                  left: MediaQuery.of(context).size.width / 2.7,
                   child: Transform.scale(
-                    scale: 3.5,
+                    scale: 4.0,
                     child: Container(
                       height: 80,
                       width: 100,
@@ -611,23 +611,30 @@ class _CaptionState extends State<Caption> {
         body: Stack(
           children: [
             Container(
-              height: 330,
+              height: MediaQuery.of(context).size.height - 300,
+              width: MediaQuery.of(context).size.width,
               child: Transform.translate(
-                offset: Offset(52, 24),
-                child: Material(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(36.0),
-                    bottomRight: Radius.circular(36.0),
-                  ),
-                  elevation: 10.0,
-                  child: Transform.scale(
-                    scale: 1.5,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(36.0),
-                        bottomRight: Radius.circular(36.0),
+                offset: Offset(0, MediaQuery.of(context).size.height / 605),
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: Material(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(36.0),
+                      bottomRight: Radius.circular(36.0),
+                    ),
+                    elevation: 10.0,
+                    child: Transform.scale(
+                      scale: 1,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(36.0),
+                          bottomRight: Radius.circular(36.0),
+                        ),
+                        child: FittedBox(
+                          fit: BoxFit.fill,
+                          child: Image.file(image),
+                        ),
                       ),
-                      child: Image.file(image),
                     ),
                   ),
                 ),
@@ -636,7 +643,8 @@ class _CaptionState extends State<Caption> {
             Column(
               children: [
                 Transform.translate(
-                  offset: Offset(15, 440),
+                  offset: Offset(MediaQuery.of(context).size.width - 400,
+                      MediaQuery.of(context).size.height - 290),
                   child: Text(
                     "Top Suggestions",
                     textAlign: TextAlign.left,
@@ -648,7 +656,8 @@ class _CaptionState extends State<Caption> {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(-25, 430),
+                  offset: Offset(MediaQuery.of(context).size.width - 440,
+                      MediaQuery.of(context).size.height - 290),
                   child: DropdownButton<String>(
                     value: dropdownValue,
                     icon: Icon(
@@ -690,9 +699,9 @@ class _CaptionState extends State<Caption> {
             Visibility(
               visible: vis_status,
               child: Transform.translate(
-                offset: Offset(0, 510),
+                offset: Offset(0, MediaQuery.of(context).size.height - 220),
                 child: Container(
-                  height: 250.0,
+                  height: MediaQuery.of(context).size.height / 4,
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: ListView.builder(
                     itemCount: _hasMore ? captions.length + 1 : captions.length,
@@ -711,14 +720,14 @@ class _CaptionState extends State<Caption> {
                       }
                       return Card(
                         color: Colors.grey[100],
-                        margin: EdgeInsets.all(7),
+                        margin: EdgeInsets.all(3),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.circular(20.0),
                         ),
                         child: ListTile(
                           contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                           title: Transform.translate(
-                            offset: Offset(0, 5),
+                            offset: Offset(0, 0),
                             child: Text(
                               captions[index],
                               textAlign: TextAlign.left,
@@ -748,14 +757,14 @@ class _CaptionState extends State<Caption> {
             Visibility(
               visible: !vis_status,
               child: Transform.translate(
-                offset: Offset(0, 480),
+                offset: Offset(0, MediaQuery.of(context).size.height - 250),
                 child: Container(
                   height: 250,
                   padding: EdgeInsets.fromLTRB(10, 30, 10, 10),
                   child: Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: this.createTags(0, 3, context),
                       ),
                       Row(
@@ -763,11 +772,12 @@ class _CaptionState extends State<Caption> {
                         children: this.createTags(3, 6, context),
                       ),
                       Transform.translate(
-                        offset: Offset(-130, 10),
+                        offset:
+                            Offset(MediaQuery.of(context).size.width - 560, 10),
                         child: Text(
                           "Emojis",
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: MediaQuery.of(context).size.width / 20,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
                             letterSpacing: 1.0,
